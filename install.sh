@@ -4,7 +4,7 @@
 set -e
 
 usage() {
-  echo "用法: bash <(wget -qO- https://raw.githubusercontent.com/kekylin/debnas/main/install.sh) -s 平台@分支"
+  echo "用法: bash <(wget -qO- https://raw.githubusercontent.com/gauyeun/debnas/main/install.sh) -s 平台@分支"
   echo "示例: -s github@main 或 -s gitee@dev"
   exit 1
 }
