@@ -11,7 +11,6 @@ IFS=$'\n\t'
 # 镜像站列表（按优先级排序）：URL=中文名称
 # 设计说明：使用 = 作为分隔符而非 |，避免与 URL 查询参数中的 | 字符冲突
 readonly MIRROR_LIST=(
-  "https://mirrors.cernet.edu.cn=校园网联合镜像站"
   "https://mirrors.tuna.tsinghua.edu.cn=清华大学开源软件镜像站"
   "https://mirrors.ustc.edu.cn=中国科学技术大学开源软件镜像站"
   "https://mirrors.aliyun.com=阿里云开源镜像站"
