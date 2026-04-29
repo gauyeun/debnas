@@ -4,7 +4,7 @@
 set -e
 
 usage() {
-  echo "用法: bash <(wget -qO- https://raw.githubusercontent.com/gauyeun/debnas/main/install.sh) -s 平台@分支"
+  echo "用法: bash <(wget -qO- https://raw.githubusercontent.com/gauyeun/debnas/tuna/install.sh) -s 平台@分支"
   echo "示例: -s github@main 或 -s gitee@dev"
   exit 1
 }
@@ -43,10 +43,10 @@ fi
 
 # 设置下载链接和解压后子目录名
 if [[ "$PLATFORM" == "gitee" ]]; then
-  TAR_URL="https://gitee.com/kekylin/debnas/repository/archive/$BRANCH.tar.gz"
+  TAR_URL="https://gitee.com/gauyeun/debnas/repository/archive/$BRANCH.tar.gz"
 TAR_SUBDIR="debnas-$BRANCH"
 elif [[ "$PLATFORM" == "github" ]]; then
-  TAR_URL="https://github.com/kekylin/debnas/archive/refs/heads/$BRANCH.tar.gz"
+  TAR_URL="https://github.com/gauyeun/debnas/archive/refs/heads/$BRANCH.tar.gz"
 TAR_SUBDIR="debnas-$BRANCH"
 else
   echo "[FAIL] 不支持的平台: $PLATFORM"
